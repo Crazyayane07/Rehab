@@ -8,6 +8,7 @@ namespace Rehab
         protected GameControler Controler { get { return GameControler.Controler; } }
 
         protected IAuthorizationService AuthorizationService { get { return Controler.Services.AuthorizationService; } } 
+        protected IDatabaseService DatabaseService { get { return Controler.Services.DatabaseService; } }
 
         protected void SetActive(bool active)
         {

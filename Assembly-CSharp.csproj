@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{553745C0-F9DA-ED89-38C9-09E34A7D92CA}</ProjectGuid>
+    <ProjectGuid>{8D772BBC-7093-23CF-9E1B-B39B09C1FB27}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -64,9 +64,16 @@
     <Compile Include="Assets\Scripts\Controlers\GameControler.cs" />
     <Compile Include="Assets\Scripts\Controlers\ServicesControler.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
+    <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Model\User.cs" />
     <Compile Include="Assets\Scripts\Popups\AuthorizationPanel.cs" />
+    <Compile Include="Assets\Scripts\Popups\UsersListPanel\UserPanel.cs" />
+    <Compile Include="Assets\Scripts\Popups\UsersListPanel\UsersListPanel.cs" />
     <Compile Include="Assets\Scripts\Services\AuthorizationService.cs" />
+    <Compile Include="Assets\Scripts\Services\DatabaseService.cs" />
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
+    <Compile Include="Assets\Scripts\Static\Selected.cs" />
+    <Compile Include="Assets\Scripts\Static\SQL.cs" />
     <None Include="Assets\Settings\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\Settings\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Settings\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
@@ -85,16 +92,16 @@
     <None Include="Assets\Settings\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Settings\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/rehab na nowo/Rehab02/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/rehab na nowo/Rehab02/Rehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/rehab na nowo/Rehab02/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/rehab na nowo/Rehab02/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/rehab na nowo/Rehab02/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/rehab na nowo/Rehab02/Rehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/rehab na nowo/Rehab02/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/rehab na nowo/Rehab02/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -293,6 +300,12 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>D:/rehab na nowo/Rehab02/Rehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>D:/rehab na nowo/Rehab02/Rehab/Assets/Plugins/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/anoy/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
