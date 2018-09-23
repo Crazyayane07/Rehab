@@ -1,8 +1,6 @@
 ﻿using Rehab.Popups;
-using Rehab.Popups.Panel;
-using UnityEngine.UI;
 
-namespace Rehab.SceneController
+namespace Rehab.Manager
 {
     public class MainMenu : MonoBehaviour2
     {
@@ -11,11 +9,11 @@ namespace Rehab.SceneController
         //public AddUserPopup addUserPopup;
         //public SubUserPopup subUserPopup;
 
-        public Button backButton;
-        public Button loginButton;
+        //public Button backButton;
+        //public Button loginButton;
 
-      //  public Button addUser;
-      //  public Button subUser;
+        //  public Button addUser;
+        //  public Button subUser;
 
         private void Start()
         {
@@ -26,20 +24,18 @@ namespace Rehab.SceneController
 
         private void SetUpButtons()
         {
-            backButton.onClick.AddListener(SetUpAuthorizationPanel);
-
-           // addUser.onClick.AddListener(ShowAddUserPopup);
-          //  subUser.onClick.AddListener(ShowSubUserPopup);
+            // addUser.onClick.AddListener(ShowAddUserPopup);
+            //  subUser.onClick.AddListener(ShowSubUserPopup);
         }
 
         private void ShowSubUserPopup()
         {
-           // subUserPopup.SetUp(SetUpUserList);
+            // subUserPopup.SetUp(SetUpUserList);
         }
 
         private void ShowAddUserPopup()
         {
-           // addUserPopup.SetUp(SetUpUserList);
+            // addUserPopup.SetUp(SetUpUserList);
         }
 
         private void SetUpUserList()

@@ -5,6 +5,6 @@ namespace Rehab
     {
         public static string AdminPassword = "aaa";
 
-        public static string AuthorizeError = "Podano zle haslo!"; 
+        public static string AuthorizeError = "Podano zle haslo!";
     }
 }

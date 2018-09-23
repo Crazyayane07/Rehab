@@ -1,5 +1,4 @@
-﻿
-namespace Assets.Model
+﻿namespace Rehab.Model
 {
     public class User
     {
