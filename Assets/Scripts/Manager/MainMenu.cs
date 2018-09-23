@@ -1,4 +1,6 @@
 ﻿using Rehab.Popups;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Rehab.Manager
 {
@@ -6,14 +8,14 @@ namespace Rehab.Manager
     {
         public AuthorizationPanel authorizationPanel;
         public UsersListPanel usersList;
-        //public AddUserPopup addUserPopup;
-        //public SubUserPopup subUserPopup;
+        public AddUserPopup addUserPopup;
+        public SubUserPopup subUserPopup;
 
-        //public Button backButton;
-        //public Button loginButton;
+        public Button closeGame;
+        public Button loginButton;
 
-        //  public Button addUser;
-        //  public Button subUser;
+        public Button addUser;
+        public Button subUser;
 
         private void Start()
         {
@@ -22,20 +24,26 @@ namespace Rehab.Manager
             SetUpButtons();
         }
 
+        private void CloseGame()
+        {
+            Application.Quit();
+        }
+
         private void SetUpButtons()
         {
-            // addUser.onClick.AddListener(ShowAddUserPopup);
-            //  subUser.onClick.AddListener(ShowSubUserPopup);
+            addUser.onClick.AddListener(ShowAddUserPopup);
+            subUser.onClick.AddListener(ShowSubUserPopup);
+            closeGame.onClick.AddListener(CloseGame);
         }
 
         private void ShowSubUserPopup()
         {
-            // subUserPopup.SetUp(SetUpUserList);
+            subUserPopup.SetUp(SetUpUserList);
         }
 
         private void ShowAddUserPopup()
         {
-            // addUserPopup.SetUp(SetUpUserList);
+            addUserPopup.SetUp(SetUpUserList);
         }
 
         private void SetUpUserList()

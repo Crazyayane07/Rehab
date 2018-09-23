@@ -1,4 +1,5 @@
-﻿using Rehab.Model;
+﻿using System;
+using Rehab.Model;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,8 +21,30 @@ namespace Rehab.Popups.UsersList
             this.user = user;
 
             SetUpTexts();
+            SetUpButton();
+            Subscribe();
 
             SetActive(true);
+        }
+
+        private void Subscribe()
+        {
+            UserService.OnSelect += SetShadow;
+        }
+
+        private void OnDisable()
+        {
+            UserService.OnSelect -= SetShadow;
+        }
+
+        private void SetUpButton()
+        {
+            button.onClick.AddListener(SelectUser);
+        }
+
+        private void SelectUser()
+        {
+            UserService.Select(user.Email);
         }
 
         private void SetUpTexts()

@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{1A58F6F9-650B-5E15-245B-E3216245D81C}</ProjectGuid>
+    <ProjectGuid>{8D772BBC-7093-23CF-9E1B-B39B09C1FB27}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\AuthorizationService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\DatabaseService.cs" />
+    <Compile Include="Assets\Scripts\Controller\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
     <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
@@ -71,7 +72,9 @@
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
     <Compile Include="Assets\Scripts\Static\Selected.cs" />
     <Compile Include="Assets\Scripts\Static\SQL.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\AddUserPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AuthorizationPanel.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\SubUserPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\UsersListPanel\UserPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\UsersListPanel\UsersListPanel.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -110,16 +113,16 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/nowy rehab/NewNewRehab/NewRehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/nowy rehab/NewNewRehab/NewRehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/nowy rehab/NewNewRehab/NewRehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/nowy rehab/NewNewRehab/NewRehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -319,17 +322,17 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Assets/Plugins/System.Data.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Karolina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/Karolina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Data">
-      <HintPath>E:/nowy rehab/NewNewRehab/NewRehab/Assets/Plugins/System.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.Data.Sqlite">
-      <HintPath>E:/nowy rehab/NewNewRehab/NewRehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
