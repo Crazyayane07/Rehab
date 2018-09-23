@@ -3,6 +3,7 @@ PlayerPath?
 E:/nowy rehab/NewNewRehab/Rehab/GAME/NewRehab.exe
 SceneListBegin?
 Assets/Scenes/Scene_1_MainMenu.unity
+Assets/Scenes/Scene_2_UserMenu.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -171,3 +172,4 @@ e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+a2fa7e336dd5a328a3c8e640d7937acc Assembly-CSharp.dll:Rehab.Manager.UserMenu

@@ -64,12 +64,15 @@
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\AuthorizationService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\DatabaseService.cs" />
+    <Compile Include="Assets\Scripts\Controller\Services\ScenesService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
     <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Manager\UserMenu.cs" />
     <Compile Include="Assets\Scripts\Model\User.cs" />
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
+    <Compile Include="Assets\Scripts\Static\Scenes.cs" />
     <Compile Include="Assets\Scripts\Static\Selected.cs" />
     <Compile Include="Assets\Scripts\Static\SQL.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AddUserPopup.cs" />

@@ -10,6 +10,7 @@ namespace Rehab
         protected IAuthorizationService AuthorizationService { get { return Controler.Services.AuthorizationService; } }
         protected IDatabaseService DatabaseService { get { return Controler.Services.DatabaseService; } }
         protected IUserService UserService { get { return Controler.Services.UserService; } }
+        protected IScenesService ScenesService { get { return Controler.Services.ScenesService; } }
 
         protected void SetActive(bool active)
         {
