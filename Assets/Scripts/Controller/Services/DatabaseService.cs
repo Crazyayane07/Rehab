@@ -18,7 +18,7 @@ namespace Rehab.Services
         public void SubUser(string email, Action onSuccess)
         {
             using (IDbConnection dbConnection = new SqliteConnection(SQL.CONNESTION_STRING))
-                {
+            {
                     dbConnection.Open();
                     using (IDbCommand dbCmd = dbConnection.CreateCommand())
                     {
@@ -40,6 +40,7 @@ namespace Rehab.Services
                     onSuccess();
                     dbConnection.Close();
                 }
+            Selected.USER = "";
         }
 
         public void AddUser(User user, Action onSuccess)

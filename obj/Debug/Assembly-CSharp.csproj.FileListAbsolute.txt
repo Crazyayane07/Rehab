@@ -168,8 +168,3 @@ E:\nowy rehab\NewNewRehab\Rehab\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 E:\nowy rehab\NewNewRehab\Rehab\obj\Debug\Assembly-CSharp.dll
 E:\nowy rehab\NewNewRehab\Rehab\obj\Debug\Assembly-CSharp.pdb
 E:\nowy rehab\NewNewRehab\Rehab\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-E:\nowy rehab\NewNewRehab\Rehab\Temp\bin\Debug\Assembly-CSharp.dll.config
-E:\nowy rehab\NewNewRehab\Rehab\Temp\bin\Debug\System.Data.SQLite.dll
-E:\nowy rehab\NewNewRehab\Rehab\Temp\bin\Debug\System.Data.SQLite.Linq.dll
-E:\nowy rehab\NewNewRehab\Rehab\Temp\bin\Debug\System.Data.SQLite.xml
-E:\nowy rehab\NewNewRehab\Rehab\Temp\bin\Debug\System.Data.SQLite.dll.config

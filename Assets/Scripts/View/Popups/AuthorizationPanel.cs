@@ -11,10 +11,10 @@ namespace Rehab.Popups
         public Button closeGame;
         public TextMeshProUGUI error;
 
-       /* private void Start()
+
+        private void Start()
         {
-            PlayerPrefs.SetString(Constans.AdminPassword, Constans.AdminPassword);
-        }*/
+        }
 
         public void SetUp()
         {
@@ -31,7 +31,6 @@ namespace Rehab.Popups
 
         private void Authorize()
         {
-            UnityEngine.Debug.Log("authorize");
             AuthorizationService.Authorize(
                      password.text,
                      Hide,
@@ -52,7 +51,6 @@ namespace Rehab.Popups
 
         private void Hide()
         {
-            UnityEngine.Debug.Log("hide");
             SetActive(false);
         }
     }

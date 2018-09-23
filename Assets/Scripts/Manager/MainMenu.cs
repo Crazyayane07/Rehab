@@ -1,4 +1,5 @@
-﻿using Rehab.Popups;
+﻿using System;
+using Rehab.Popups;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,6 +35,18 @@ namespace Rehab.Manager
             addUser.onClick.AddListener(ShowAddUserPopup);
             subUser.onClick.AddListener(ShowSubUserPopup);
             closeGame.onClick.AddListener(CloseGame);
+            loginButton.onClick.AddListener(TryLogin);
+        }
+
+        private void TryLogin()
+        {
+            if (Selected.USER != "")
+                Login();
+        }
+
+        private void Login()
+        {
+            ScenesService.LoadScene(Scenes.Scene_2_UserMenu);
         }
 
         private void ShowSubUserPopup()
