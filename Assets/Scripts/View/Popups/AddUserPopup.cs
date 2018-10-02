@@ -22,7 +22,7 @@ namespace Rehab.Popups
 
             SetUpButtons();
 
-            this.gameObject.SetActive(true);
+            SetActive(true);
         }
 
         private void SetUpButtons()

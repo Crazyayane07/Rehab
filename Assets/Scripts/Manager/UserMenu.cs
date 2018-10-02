@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using System;
+using TMPro;
 using UnityEngine.UI;
 
 namespace Rehab.Manager
@@ -21,6 +22,12 @@ namespace Rehab.Manager
         private void SetUpButtons()
         {
             backButton.onClick.AddListener(GoBackToMainMenu);
+            planButton.onClick.AddListener(GoToPlanMaker);
+        }
+
+        private void GoToPlanMaker()
+        {
+            ScenesService.LoadScene(Scenes.Scene_3_Plan);
         }
 
         private void GoBackToMainMenu()

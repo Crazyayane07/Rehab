@@ -69,7 +69,11 @@
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
     <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\Manager\Plan\AnimationMode.cs" />
+    <Compile Include="Assets\Scripts\Manager\Plan\EditionMode.cs" />
+    <Compile Include="Assets\Scripts\Manager\Plan\PlanMaker.cs" />
     <Compile Include="Assets\Scripts\Manager\UserMenu.cs" />
+    <Compile Include="Assets\Scripts\Model\Activity.cs" />
     <Compile Include="Assets\Scripts\Model\User.cs" />
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
     <Compile Include="Assets\Scripts\Static\Scenes.cs" />
@@ -77,6 +81,9 @@
     <Compile Include="Assets\Scripts\Static\SQL.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AddUserPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AuthorizationPanel.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Plan\ActivityDrag.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Plan\ActivitySlot.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Plan\PlanMakerPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\SubUserPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\UsersListPanel\UserPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\UsersListPanel\UsersListPanel.cs" />
