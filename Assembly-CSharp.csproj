@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\AuthorizationService.cs" />
+    <Compile Include="Assets\Scripts\Controller\Services\ContentService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\DatabaseService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\ScenesService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\UserService.cs" />
@@ -74,6 +75,8 @@
     <Compile Include="Assets\Scripts\Manager\Plan\PlanMaker.cs" />
     <Compile Include="Assets\Scripts\Manager\UserMenu.cs" />
     <Compile Include="Assets\Scripts\Model\Activity.cs" />
+    <Compile Include="Assets\Scripts\Model\Content\ActivityContent.cs" />
+    <Compile Include="Assets\Scripts\Model\Content\Content.cs" />
     <Compile Include="Assets\Scripts\Model\User.cs" />
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
     <Compile Include="Assets\Scripts\Static\Scenes.cs" />

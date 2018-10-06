@@ -35,8 +35,13 @@ namespace Rehab.Manager.Plan
 
         private void SetUpActivities()
         {
-            for (int i = 0; i < activitiesDrag.Length; i++)
-                activitiesDrag[i].SetUp();
+            var activities = ContentService.GetActivities();
+
+            for (int i = 0; i < activitiesDrag.Length && i < activities.Count; i++)
+                activitiesDrag[i].SetUp(new Model.Activity(activities[i].activityName, activities[i].icon));
+            for (int j = activities.Count; j < activitiesDrag.Length; j++)
+                activitiesDrag[j].Hide();
+
         }
     }
 }

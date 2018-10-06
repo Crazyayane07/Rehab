@@ -11,6 +11,7 @@ namespace Rehab
         protected IDatabaseService DatabaseService { get { return Controler.Services.DatabaseService; } }
         protected IUserService UserService { get { return Controler.Services.UserService; } }
         protected IScenesService ScenesService { get { return Controler.Services.ScenesService; } }
+        protected IContentService ContentService { get { return Controler.Services.ContentService; } }
 
         protected void SetActive(bool active)
         {
