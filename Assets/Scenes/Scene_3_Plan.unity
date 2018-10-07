@@ -113,7 +113,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &154512567
+--- !u!1001 &874973028
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -210,22 +210,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224646970383527782, guid: bb0f851909a121345b358b958d306a64,
-        type: 2}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224646970383527782, guid: bb0f851909a121345b358b958d306a64,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114820427357664176, guid: bb0f851909a121345b358b958d306a64,
+    - target: {fileID: 114494977797423362, guid: bb0f851909a121345b358b958d306a64,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114820427357664176, guid: bb0f851909a121345b358b958d306a64,
+    - target: {fileID: 114494977797423362, guid: bb0f851909a121345b358b958d306a64,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -240,12 +230,12 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114494977797423362, guid: bb0f851909a121345b358b958d306a64,
+    - target: {fileID: 114820427357664176, guid: bb0f851909a121345b358b958d306a64,
         type: 2}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114494977797423362, guid: bb0f851909a121345b358b958d306a64,
+    - target: {fileID: 114820427357664176, guid: bb0f851909a121345b358b958d306a64,
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
@@ -269,11 +259,6 @@ Prefab:
         type: 2}
       propertyPath: m_isInputParsingRequired
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224733940883672878, guid: bb0f851909a121345b358b958d306a64,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb0f851909a121345b358b958d306a64, type: 2}
@@ -344,7 +329,7 @@ Transform:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 224256434586742262, guid: bb0f851909a121345b358b958d306a64,
     type: 2}
-  m_PrefabInternal: {fileID: 154512567}
+  m_PrefabInternal: {fileID: 874973028}
 --- !u!1 &1518242001
 GameObject:
   m_ObjectHideFlags: 0

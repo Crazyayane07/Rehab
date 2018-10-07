@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Controller\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
+    <Compile Include="Assets\Scripts\Custom\UIElementDragger.cs" />
     <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Manager\Plan\AnimationMode.cs" />
     <Compile Include="Assets\Scripts\Manager\Plan\EditionMode.cs" />
