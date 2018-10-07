@@ -55,7 +55,7 @@ namespace Rehab.Manager
         private void OnAnimationStart()
         {
             StartAnimationForActivitySlots();
-            animationMode.SetUp(GetAnimationTime());
+            animationMode.SetUp(GetAnimationTime(), holder.GetActivityNames(), holder.GetTimes());
         }
 
         private long GetAnimationTime()

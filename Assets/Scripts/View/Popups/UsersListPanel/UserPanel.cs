@@ -49,7 +49,7 @@ namespace Rehab.Popups.UsersList
 
         private void SelectUser()
         {
-            UserService.Select(user.Email);
+            UserService.Select(user);
         }
 
         private void SetUpTexts()
@@ -62,7 +62,7 @@ namespace Rehab.Popups.UsersList
         private void SetShadow()
         {
             if(this)
-                shadow.SetActive(user.Email == Selected.USER);
+                shadow.SetActive(user.Email == Selected.USER.Email);
         }
 
     }

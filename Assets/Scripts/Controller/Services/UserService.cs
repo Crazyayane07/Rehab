@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rehab.Model;
+using System;
 
 namespace Rehab.Services
 {
@@ -6,16 +7,16 @@ namespace Rehab.Services
     {
         Action OnSelect { get; set; }
 
-        void Select(string email);
+        void Select(User user);
     }
 
     public class UserService : IUserService
     {
         public Action OnSelect { get; set; }
 
-        public void Select(string email)
+        public void Select(User user)
         {
-            Selected.USER = email;
+            Selected.USER = user;
 
             if(OnSelect != null)
                 OnSelect.Invoke();

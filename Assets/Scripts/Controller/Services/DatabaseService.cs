@@ -40,7 +40,7 @@ namespace Rehab.Services
                     onSuccess();
                     dbConnection.Close();
                 }
-            Selected.USER = "";
+            Selected.USER = null;
         }
 
         public void AddUser(User user, Action onSuccess)

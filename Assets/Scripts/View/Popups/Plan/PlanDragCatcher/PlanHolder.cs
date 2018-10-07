@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 
 namespace Rehab.Popups.Plan
 {
@@ -41,6 +42,28 @@ namespace Rehab.Popups.Plan
                     time += activitySlots[i].GetActivityTime();
 
             return time;
+        }
+
+        public float[] GetTimes()
+        {
+            List<float> times = new List<float>();
+
+            for (int i = 0; i < activitySlots.Length; i++)
+                if (activitySlots[i].isActiveAndEnabled)
+                    times.Add(activitySlots[i].GetTime());
+
+            return times.ToArray();
+        }
+
+        public string[] GetActivityNames()
+        {
+            List<string> names = new List<string>();
+
+            for (int i = 0; i < activitySlots.Length; i++)
+                if (activitySlots[i].isActiveAndEnabled)
+                    names.Add(activitySlots[i].GetActivityName());
+
+            return names.ToArray();
         }
 
         public void StartAnimationForActivitySlots()

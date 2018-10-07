@@ -3,6 +3,9 @@ namespace Rehab
 {
     public class Constans
     {
+        public const string ADMIN_EMAIL = "crazyayane07@gmail.com";
+        public const string ADMIN_EMAIL_PASSWORD = "a.y.a.n.e.07";
+
         public const string ACTIVITY_SLOT_HIDE = "Hide";
         public const string ACTIVITY_SLOT_SHOW = "Show";
 

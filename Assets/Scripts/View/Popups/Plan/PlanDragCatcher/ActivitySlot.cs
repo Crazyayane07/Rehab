@@ -27,6 +27,16 @@ namespace Rehab.Popups.Plan
 
             SetActive(true);
         }
+        
+        public float GetTime()
+        {
+            return float.Parse(timeField.text);
+        }
+
+        public string GetActivityName()
+        {
+            return activity.ActivityName;
+        }
 
         public bool IsReadyToAnimate()
         {

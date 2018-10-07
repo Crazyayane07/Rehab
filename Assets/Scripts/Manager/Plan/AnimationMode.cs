@@ -13,9 +13,14 @@ namespace Rehab.Manager.Plan
         private float planTime;
         private float timePassed;
 
-        public void SetUp(float planTime)
+        private string[] activities;
+        private float[] times;
+
+        public void SetUp(float planTime, string[] activities, float[] times)
         {
-            this.planTime = planTime*60;
+            this.planTime = planTime * 60;
+            this.times = times;
+            this.activities = activities;
 
             SetUpButtons();
             SetUpTimeText();
@@ -44,7 +49,12 @@ namespace Rehab.Manager.Plan
 
         private void SetUpButtons()
         {
-            //set share button
+            sendButton.onClick.AddListener(SharePlan);
+        }
+
+        private void SharePlan()
+        {
+            ShareService.SendEmail(activities, times);
         }
     }
 }

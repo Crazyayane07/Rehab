@@ -10,6 +10,7 @@ namespace Rehab
         public IScenesService ScenesService { get; private set; }
         public IContentService ContentService { get; private set; }
         public ITimeService TimeService { get; private set; }
+        public IShareService ShareService { get; private set; }
 
         public ServicesController()
         {
@@ -19,6 +20,7 @@ namespace Rehab
             ScenesService = new ScenesService();
             ContentService = new ContentService();
             TimeService = new TimeService();
+            ShareService = new ShareService();
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Rehab
         protected IScenesService ScenesService { get { return Controler.Services.ScenesService; } }
         protected IContentService ContentService { get { return Controler.Services.ContentService; } }
         protected ITimeService TimeService { get { return Controler.Services.TimeService; } }
+        protected IShareService ShareService { get { return Controler.Services.ShareService; } }
 
         protected void SetActive(bool active)
         {

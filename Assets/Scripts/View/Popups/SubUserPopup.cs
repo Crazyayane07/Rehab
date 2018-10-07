@@ -25,7 +25,7 @@ namespace Rehab.Popups
 
         private void SetUpText()
         {
-            userToDelete.text = Selected.USER;
+            userToDelete.text = Selected.USER.Email;
         }
 
         private void SetUpButtons()
@@ -36,13 +36,13 @@ namespace Rehab.Popups
 
         private void SubUser()
         {
-            DatabaseService.SubUser(Selected.USER, OnSuccessSubstract);
+            DatabaseService.SubUser(Selected.USER.Email, OnSuccessSubstract);
         }
 
         private void OnSuccessSubstract()
         {
             refreshUsers();
-            Selected.USER = "";
+            Selected.USER = null;
             Hide();
         }
 

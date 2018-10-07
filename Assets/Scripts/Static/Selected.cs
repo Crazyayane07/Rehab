@@ -1,8 +1,9 @@
-﻿
+﻿using Rehab.Model;
+
 namespace Rehab
 {
     public class Selected
     {
-        public static string USER = "";
+        public static User USER = null;
     }
 }

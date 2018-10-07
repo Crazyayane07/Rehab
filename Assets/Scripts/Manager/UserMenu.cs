@@ -37,7 +37,7 @@ namespace Rehab.Manager
 
         private void SetUpText()
         {
-            welcomeText.text = "Witaj " + Selected.USER + "!";
+            welcomeText.text = "Witaj " + Selected.USER.Name + "!";
         }
     }
 }

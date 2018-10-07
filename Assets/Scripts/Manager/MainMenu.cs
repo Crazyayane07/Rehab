@@ -40,7 +40,7 @@ namespace Rehab.Manager
 
         private void TryLogin()
         {
-            if (Selected.USER != "")
+            if (Selected.USER != null)
                 Login();
         }
 

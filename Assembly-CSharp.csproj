@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Controller\Services\ContentService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\DatabaseService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\ScenesService.cs" />
+    <Compile Include="Assets\Scripts\Controller\Services\ShareService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\TimeService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
@@ -130,16 +131,16 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -340,10 +341,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite">
-      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>E:/nowy rehab/NewNewRehab/Rehab/Assets/Plugins/System.Data.dll</HintPath>
+      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Assets/Plugins/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Karolina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>
