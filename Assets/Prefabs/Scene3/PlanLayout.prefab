@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 114291511873853974}
   m_Layer: 0
   m_Name: Activity (3)
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 114881494441744960}
   m_Layer: 0
   m_Name: Activity (5)
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -556,7 +556,7 @@ GameObject:
   - component: {fileID: 114458381467248084}
   m_Layer: 0
   m_Name: Activity (1)
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -661,7 +661,7 @@ GameObject:
   - component: {fileID: 114367067574181164}
   m_Layer: 0
   m_Name: Activity (2)
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 114220102412694890}
   m_Layer: 0
   m_Name: Activity
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1106,9 +1106,10 @@ GameObject:
   - component: {fileID: 222938058543498292}
   - component: {fileID: 114341964828390096}
   - component: {fileID: 114116406512535266}
+  - component: {fileID: 114889881247019458}
   m_Layer: 0
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1430,7 +1431,7 @@ GameObject:
   - component: {fileID: 114650226984092068}
   m_Layer: 0
   m_Name: Activity (4)
-  m_TagString: Untagged
+  m_TagString: UICatcher
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6320,6 +6321,24 @@ MonoBehaviour:
   m_RestoreOriginalTextOnEscape: 1
   m_isRichTextEditingAllowed: 1
   m_InputValidator: {fileID: 0}
+--- !u!114 &114889881247019458
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1740195048398004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 166685ce158d1854694a962d0d021f4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activitySlots:
+  - {fileID: 114220102412694890}
+  - {fileID: 114458381467248084}
+  - {fileID: 114367067574181164}
+  - {fileID: 114291511873853974}
+  - {fileID: 114650226984092068}
+  - {fileID: 114881494441744960}
 --- !u!114 &114902261655902936
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6449,13 +6468,7 @@ MonoBehaviour:
   animationMode: {fileID: 114584252811035684}
   editonMode: {fileID: 114594354439320282}
   popup: {fileID: 114687601431050160}
-  activitySlots:
-  - {fileID: 114220102412694890}
-  - {fileID: 114458381467248084}
-  - {fileID: 114367067574181164}
-  - {fileID: 114291511873853974}
-  - {fileID: 114650226984092068}
-  - {fileID: 114881494441744960}
+  holder: {fileID: 114889881247019458}
 --- !u!114 &114922057950753250
 MonoBehaviour:
   m_ObjectHideFlags: 1

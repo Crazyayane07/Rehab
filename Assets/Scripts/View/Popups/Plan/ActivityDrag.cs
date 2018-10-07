@@ -16,6 +16,11 @@ namespace Rehab.Popups.Plan
             SetActive(true);
         }
 
+        public Activity GetActivity()
+        {
+            return activity;
+        }
+
         private void SetUpIcon()
         {
             icon.sprite = activity.Icon;

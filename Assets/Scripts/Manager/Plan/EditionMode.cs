@@ -24,6 +24,12 @@ namespace Rehab.Manager.Plan
         private void SetUpButton()
         {
             startAnimation.onClick.AddListener(StartAnimation);
+            startAnimation.interactable = false;
+        }
+
+        public void ActivateButton()
+        {
+            startAnimation.interactable = true;
         }
 
         private void StartAnimation()

@@ -1,5 +1,4 @@
-﻿using System;
-using Rehab.Manager.Plan;
+﻿using Rehab.Manager.Plan;
 using Rehab.Popups.Plan;
 using UnityEngine.UI;
 
@@ -13,7 +12,7 @@ namespace Rehab.Manager
         public EditionMode editonMode;
         public PlanMakerPopup popup;
 
-        public ActivitySlot[] activitySlots;
+        public PlanHolder holder;
 
         private void Start()
         {
@@ -40,8 +39,17 @@ namespace Rehab.Manager
 
         private void SetActivitySlots(int activitiesNumber)
         {
-            for (int i = 0; i < activitiesNumber && i < activitySlots.Length; i++)
-                activitySlots[i].SetUp();
+            holder.ActivateSlots(activitiesNumber, IsReadyForAnimation);
+        }
+
+        private void IsReadyForAnimation()
+        {
+            editonMode.ActivateButton();
+        }
+
+        private void SetStartAnimationButton()
+        {
+            editonMode.startAnimation.interactable = false;
         }
 
         private void OnAnimationStart()
@@ -52,20 +60,12 @@ namespace Rehab.Manager
 
         private long GetAnimationTime()
         {
-            long time = 0;
-
-            for (int i = 0; i < activitySlots.Length; i++)
-                if(activitySlots[i].isActiveAndEnabled)
-                    time += activitySlots[i].GetActivityTime();
-
-            return time;
+            return holder.GetAnimationTime();
         }
 
         private void StartAnimationForActivitySlots()
         {
-            for (int i = 0; i < activitySlots.Length; i++)
-                if (activitySlots[i].isActiveAndEnabled)
-                    activitySlots[i].StartAnimation();
+            holder.StartAnimationForActivitySlots();
         }
     }
 }
