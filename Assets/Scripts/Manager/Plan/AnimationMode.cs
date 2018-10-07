@@ -1,4 +1,5 @@
 ﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace Rehab.Manager.Plan
@@ -9,11 +10,12 @@ namespace Rehab.Manager.Plan
         public TextMeshProUGUI activeActivityName;
         public TextMeshProUGUI timeText;
 
-        private long time;
+        private float planTime;
+        private float timePassed;
 
-        public void SetUp(long time)
+        public void SetUp(float planTime)
         {
-            this.time = time;
+            this.planTime = planTime*60;
 
             SetUpButtons();
             SetUpTimeText();
@@ -21,9 +23,18 @@ namespace Rehab.Manager.Plan
             SetActive(true);
         }
 
+        private void Update()
+        {
+            if (timePassed < planTime)
+            {
+                timePassed += Time.deltaTime;
+                SetUpTimeText();
+            }
+        }
+
         private void SetUpTimeText()
         {
-            timeText.text = time.ToString();
+            timeText.text = TimeService.TranslateTime(timePassed);
         }
 
         public void ChangeActiveActivity(string name)
@@ -33,7 +44,7 @@ namespace Rehab.Manager.Plan
 
         private void SetUpButtons()
         {
-            //set send button
+            //set share button
         }
     }
 }

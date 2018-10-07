@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Controller\Services\ContentService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\DatabaseService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\ScenesService.cs" />
+    <Compile Include="Assets\Scripts\Controller\Services\TimeService.cs" />
     <Compile Include="Assets\Scripts\Controller\Services\UserService.cs" />
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\Scripts\View\Popups\AuthorizationPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\ActivityDrag.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\ActivitySlot.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\ActivityTimer.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\PlanHolder.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanMakerPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\SubUserPopup.cs" />

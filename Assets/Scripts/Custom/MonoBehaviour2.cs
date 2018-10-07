@@ -12,6 +12,7 @@ namespace Rehab
         protected IUserService UserService { get { return Controler.Services.UserService; } }
         protected IScenesService ScenesService { get { return Controler.Services.ScenesService; } }
         protected IContentService ContentService { get { return Controler.Services.ContentService; } }
+        protected ITimeService TimeService { get { return Controler.Services.TimeService; } }
 
         protected void SetActive(bool active)
         {

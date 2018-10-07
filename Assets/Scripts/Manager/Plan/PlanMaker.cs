@@ -39,7 +39,7 @@ namespace Rehab.Manager
 
         private void SetActivitySlots(int activitiesNumber)
         {
-            holder.ActivateSlots(activitiesNumber, IsReadyForAnimation);
+            holder.ActivateSlots(activitiesNumber, IsReadyForAnimation, animationMode.ChangeActiveActivity);
         }
 
         private void IsReadyForAnimation()

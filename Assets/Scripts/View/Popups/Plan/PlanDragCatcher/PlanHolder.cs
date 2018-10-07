@@ -9,12 +9,12 @@ namespace Rehab.Popups.Plan
 
         private Action onFullySetUp;
 
-        public void ActivateSlots(int activitiesNumber, Action onFullySetUp)
+        public void ActivateSlots(int activitiesNumber, Action onFullySetUp, Action<string> onAnimationSlotStart)
         {
             this.onFullySetUp = onFullySetUp;
 
             for (int i = 0; i < activitiesNumber && i < activitySlots.Length; i++)
-                activitySlots[i].Activate(CheckIfFullySettedUp);
+                activitySlots[i].Activate(CheckIfFullySettedUp, onAnimationSlotStart);
         }
 
         private void CheckIfFullySettedUp()
@@ -45,9 +45,11 @@ namespace Rehab.Popups.Plan
 
         public void StartAnimationForActivitySlots()
         {
-            for (int i = 0; i < activitySlots.Length; i++)
+            activitySlots[0].StartAnimation();
+
+            for (int i = 1; i < activitySlots.Length; i++)
                 if (activitySlots[i].isActiveAndEnabled)
-                    activitySlots[i].StartAnimation();
+                    activitySlots[i].SetInactiveAnimation();
         }
 
         public bool CanStartAnimation()
