@@ -22,7 +22,13 @@ namespace Rehab.Manager
         private void SetUpButtons()
         {
             backButton.onClick.AddListener(GoBackToMainMenu);
+            gamesButton.onClick.AddListener(GotToMiniGames);
             planButton.onClick.AddListener(GoToPlanMaker);
+        }
+
+        private void GotToMiniGames()
+        {
+            ScenesService.LoadScene(Scenes.Scene_4_MiniGames);
         }
 
         private void GoToPlanMaker()

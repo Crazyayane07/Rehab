@@ -72,6 +72,7 @@
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
     <Compile Include="Assets\Scripts\Custom\UIActivitiesDragger.cs" />
+    <Compile Include="Assets\Scripts\Manager\Game\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Manager\Plan\AnimationMode.cs" />
     <Compile Include="Assets\Scripts\Manager\Plan\EditionMode.cs" />
@@ -80,6 +81,7 @@
     <Compile Include="Assets\Scripts\Model\Activity.cs" />
     <Compile Include="Assets\Scripts\Model\Content\ActivityContent.cs" />
     <Compile Include="Assets\Scripts\Model\Content\Content.cs" />
+    <Compile Include="Assets\Scripts\Model\Content\MiniGameContent.cs" />
     <Compile Include="Assets\Scripts\Model\User.cs" />
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
     <Compile Include="Assets\Scripts\Static\Scenes.cs" />
@@ -87,6 +89,8 @@
     <Compile Include="Assets\Scripts\Static\SQL.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AddUserPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AuthorizationPanel.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\GameManagment\GameButton.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\GameManagment\InformationPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\ActivityDrag.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\ActivitySlot.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\ActivityTimer.cs" />

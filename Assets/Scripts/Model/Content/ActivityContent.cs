@@ -2,7 +2,7 @@
 
 namespace Rehab.Model.Content
 {
-    [CreateAssetMenu(menuName = "ActivityContent")]
+    [CreateAssetMenu(menuName = "Content/ActivityContent")]
     public class ActivityContent : ScriptableObject
     {
         public string activityName;

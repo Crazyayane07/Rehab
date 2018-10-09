@@ -337,3 +337,4 @@ E:\nowy rehab\NewNewRehab\ewrwerwerwerwerw\Rehab\Temp\bin\Debug\UnityEngine.Goog
 E:\nowy rehab\NewNewRehab\ewrwerwerwerwerw\Rehab\Temp\bin\Debug\UnityEngine.HoloLens.xml
 E:\nowy rehab\NewNewRehab\ewrwerwerwerwerw\Rehab\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
 E:\nowy rehab\NewNewRehab\ewrwerwerwerwerw\Rehab\obj\Debug\Assembly-CSharp.csproj.CopyComplete
+E:\nowy rehab\NewNewRehab\ewrwerwerwerwerw\Rehab\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache

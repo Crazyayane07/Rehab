@@ -7,6 +7,7 @@ namespace Rehab.Services
     public interface IContentService
     {
         List<ActivityContent> GetActivities();
+        List<MiniGameContent> GetMiniGames();
     }
 
     public class ContentService : IContentService
@@ -31,6 +32,16 @@ namespace Rehab.Services
                 activities.Add(content.activities[i]);
 
             return activities;
+        }
+
+        public List<MiniGameContent> GetMiniGames()
+        {
+            List<MiniGameContent> miniGames = new List<MiniGameContent>();
+
+            for (int i = 0; i < content.miniGames.Length; i++)
+                miniGames.Add(content.miniGames[i]);
+
+            return miniGames;
         }
     }
 }
