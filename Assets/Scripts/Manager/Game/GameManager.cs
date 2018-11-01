@@ -1,4 +1,5 @@
-﻿using Rehab.Popups.GameManagment;
+﻿using System;
+using Rehab.Popups.GameManagment;
 using UnityEngine.UI;
 
 namespace Rehab.Manager
@@ -6,6 +7,9 @@ namespace Rehab.Manager
     public class GameManager : MonoBehaviour2
     {
         public Button backToMainMenu;
+        public Button makeTestButton;
+        public MakeTestPopup popup;
+
         public GameButton[] gameButtons;
 
         private void Start()
@@ -16,7 +20,10 @@ namespace Rehab.Manager
 
         private void SetUpGameButtons()
         {
-            backToMainMenu.onClick.AddListener(BackToMainMenu);
+            var miniGames = ContentService.GetMiniGames();
+
+            for (int i = 0; i < miniGames.Count && i < gameButtons.Length; i++)
+                gameButtons[i].SetUp(miniGames[i]);
         }
 
         private void BackToMainMenu()
@@ -26,10 +33,13 @@ namespace Rehab.Manager
 
         private void SetUpButtons()
         {
-            var miniGames = ContentService.GetMiniGames();
+            backToMainMenu.onClick.AddListener(BackToMainMenu);
+            makeTestButton.onClick.AddListener(ShowMakeTestPopup);
+        }
 
-            for (int i = 0; i < miniGames.Count && i < gameButtons.Length; i++)
-                gameButtons[i].SetUp(miniGames[i]);
+        private void ShowMakeTestPopup()
+        {
+            popup.SetUp();
         }
     }
 }

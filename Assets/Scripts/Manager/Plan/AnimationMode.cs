@@ -7,6 +7,7 @@ namespace Rehab.Manager.Plan
     public class AnimationMode : MonoBehaviour2
     {
         public Button sendButton;
+        public Animator sendTextAnimator;
         public TextMeshProUGUI activeActivityName;
         public TextMeshProUGUI timeText;
 
@@ -54,7 +55,12 @@ namespace Rehab.Manager.Plan
 
         private void SharePlan()
         {
-            ShareService.SendEmail(activities, times);
+            ShareService.SendEmail(activities, times, SetSendTextAnimation);
+        }
+
+        private void SetSendTextAnimation()
+        {
+            sendTextAnimator.SetTrigger(Constans.SEND_TEXT_ANIMATION_TRIGGER);
         }
     }
 }

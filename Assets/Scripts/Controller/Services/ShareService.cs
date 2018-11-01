@@ -9,12 +9,12 @@ namespace Rehab.Services
 {
     public interface IShareService
     {
-        void SendEmail(string[] activities, float[] times);
+        void SendEmail(string[] activities, float[] times, Action onSend);
     }
 
     public class ShareService : IShareService
     {
-        public void SendEmail(string[] activities, float[] times)
+        public void SendEmail(string[] activities, float[] times, Action onSend)
         {
             MailMessage mail = new MailMessage();
 
@@ -33,6 +33,7 @@ namespace Rehab.Services
                 delegate (object s, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
                 { return true; };
             smtpServer.Send(mail);
+            onSend();
         }
 
         private string GetEmailSubject()

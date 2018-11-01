@@ -11,6 +11,9 @@ namespace Rehab.Services
         List<User> GetUsers();
         void AddUser(User user, Action onSuccess);
         void SubUser(string email, Action onSuccess);
+
+        void AddResult(string email, string date, string gameName, string timeResult);
+        List<Result> GetUserResult(string email);
     }
 
     public class DatabaseService : IDatabaseService
@@ -104,5 +107,52 @@ namespace Rehab.Services
             return users;
         }
 
+        public void AddResult(string email, string date, string gameName, string timeResult)
+        {
+            using (IDbConnection dbConnection = new SqliteConnection(SQL.CONNESTION_STRING))
+            {
+                dbConnection.Open();
+                using (IDbCommand dbCmd = dbConnection.CreateCommand())
+                {
+                    string sqlQuery2 = "";
+
+                    //sqlQuery2 = "CREATE TABLE IF NOT EXISTS Results(id INTEGER PRIMARY KEY,UserEmail TEXT NOT NULL,Date TEXT NULL,GameName TEXT NOT NULL, TimeResult TEXT NULL)";
+                    sqlQuery2 += "INSERT INTO Results(UserEmail, Date, GameName, TimeResult) VALUES(\"" + email + "\",\"" + date + "\",\"" + gameName + "\",\"" + timeResult + "\");";
+
+                    dbCmd.CommandText = sqlQuery2;
+                    dbCmd.ExecuteScalar();
+                }
+                dbConnection.Close();
+            }
+        }
+
+        public List<Result> GetUserResult(string email)
+        {
+            List<Result> results = new List<Result>();
+
+            using (IDbConnection dbConnection = new SqliteConnection(SQL.CONNESTION_STRING))
+            {
+                dbConnection.Open();
+
+                using (IDbCommand dbCmd = dbConnection.CreateCommand())
+                {
+                    dbCmd.CommandText = SQL.GET_ALL_RESULTS_OF_USER+"'"+Selected.USER.Email+"'";
+
+                    using (IDataReader reader = dbCmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            results.Add(new Result(reader.GetString(1),
+                                reader.GetString(2),
+                                reader.GetString(3),
+                                reader.GetString(4)));
+                        }
+                        dbConnection.Close();
+                        reader.Close();
+                    }
+                }
+            }
+            return results;
+        }
     }
 }

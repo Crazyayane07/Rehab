@@ -72,7 +72,11 @@
     <Compile Include="Assets\Scripts\Controller\ServicesController.cs" />
     <Compile Include="Assets\Scripts\Custom\MonoBehaviour2.cs" />
     <Compile Include="Assets\Scripts\Custom\UIActivitiesDragger.cs" />
+    <Compile Include="Assets\Scripts\Custom\UIMiniGameDragger.cs" />
+    <Compile Include="Assets\Scripts\Manager\ArchieveManager.cs" />
     <Compile Include="Assets\Scripts\Manager\Game\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\Game\MiniGameManager.cs" />
+    <Compile Include="Assets\Scripts\Manager\Game\TestManager.cs" />
     <Compile Include="Assets\Scripts\Manager\MainMenu.cs" />
     <Compile Include="Assets\Scripts\Manager\Plan\AnimationMode.cs" />
     <Compile Include="Assets\Scripts\Manager\Plan\EditionMode.cs" />
@@ -82,21 +86,31 @@
     <Compile Include="Assets\Scripts\Model\Content\ActivityContent.cs" />
     <Compile Include="Assets\Scripts\Model\Content\Content.cs" />
     <Compile Include="Assets\Scripts\Model\Content\MiniGameContent.cs" />
+    <Compile Include="Assets\Scripts\Model\Result.cs" />
+    <Compile Include="Assets\Scripts\Model\Solution.cs" />
+    <Compile Include="Assets\Scripts\Model\Test.cs" />
     <Compile Include="Assets\Scripts\Model\User.cs" />
     <Compile Include="Assets\Scripts\Static\Constans.cs" />
     <Compile Include="Assets\Scripts\Static\Scenes.cs" />
     <Compile Include="Assets\Scripts\Static\Selected.cs" />
     <Compile Include="Assets\Scripts\Static\SQL.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AddUserPopup.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Archieve\ResultPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\AuthorizationPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\GameManagment\GameButton.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\GameManagment\GameToggle.cs" />
     <Compile Include="Assets\Scripts\View\Popups\GameManagment\InformationPanel.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\GameManagment\MakeTestPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\ActivityDrag.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\ActivitySlot.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\ActivityTimer.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanDragCatcher\PlanHolder.cs" />
     <Compile Include="Assets\Scripts\View\Popups\Plan\PlanMakerPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\SubUserPopup.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Test\DragAnswer.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Test\DragSolution.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Test\EndTestPopup.cs" />
+    <Compile Include="Assets\Scripts\View\Popups\Test\ResultPopup.cs" />
     <Compile Include="Assets\Scripts\View\Popups\UsersListPanel\UserPanel.cs" />
     <Compile Include="Assets\Scripts\View\Popups\UsersListPanel\UsersListPanel.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -135,16 +149,16 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/nowy rehab/ostatnie poprawki/Rehab/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/nowy rehab/ostatnie poprawki/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/nowy rehab/ostatnie poprawki/Rehab/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/nowy rehab/ostatnie poprawki/Rehab/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -345,10 +359,10 @@
       <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Data.Sqlite">
-      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+      <HintPath>E:/nowy rehab/ostatnie poprawki/Rehab/Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
     </Reference>
     <Reference Include="System.Data">
-      <HintPath>E:/nowy rehab/NewNewRehab/ewrwerwerwerwerw/Rehab/Assets/Plugins/System.Data.dll</HintPath>
+      <HintPath>E:/nowy rehab/ostatnie poprawki/Rehab/Assets/Plugins/System.Data.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.Analytics">
       <HintPath>C:/Users/Karolina/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.16/UnityEngine.Analytics.dll</HintPath>

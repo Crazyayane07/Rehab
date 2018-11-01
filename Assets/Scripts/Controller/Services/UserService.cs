@@ -8,6 +8,7 @@ namespace Rehab.Services
         Action OnSelect { get; set; }
 
         void Select(User user);
+        void Unselect();
     }
 
     public class UserService : IUserService
@@ -19,6 +20,14 @@ namespace Rehab.Services
             Selected.USER = user;
 
             if(OnSelect != null)
+                OnSelect.Invoke();
+        }
+
+        public void Unselect()
+        {
+            Selected.USER = null;
+
+            if (OnSelect != null)
                 OnSelect.Invoke();
         }
     }

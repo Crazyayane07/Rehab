@@ -17,6 +17,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 083567944bf8e8a4ab2ff8b65b26f89b, type: 2}
   - {fileID: 11400000, guid: b9b86cd5868e71a4da50998fc5e6e8ce, type: 2}
   - {fileID: 11400000, guid: c218dd73767526a49b81dacbc485b620, type: 2}
+  - {fileID: 11400000, guid: 9b645b41999dd4f4583aefe0638b95af, type: 2}
   miniGames:
   - {fileID: 11400000, guid: 793820543d6ed2948aa73c36e583b431, type: 2}
   - {fileID: 11400000, guid: c655b99b860151c41878b8c30f7be56d, type: 2}

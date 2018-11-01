@@ -24,6 +24,12 @@ namespace Rehab.Manager
             backButton.onClick.AddListener(GoBackToMainMenu);
             gamesButton.onClick.AddListener(GotToMiniGames);
             planButton.onClick.AddListener(GoToPlanMaker);
+            scoresButton.onClick.AddListener(GoToArchive);
+        }
+
+        private void GoToArchive()
+        {
+            ScenesService.LoadScene(Scenes.Scene_6_Archive);
         }
 
         private void GotToMiniGames()

@@ -3,8 +3,8 @@ namespace Rehab
 {
     public class Constans
     {
-        public const string ADMIN_EMAIL = "crazyayane07@gmail.com";
-        public const string ADMIN_EMAIL_PASSWORD = "a.y.a.n.e.07";
+        public const string ADMIN_EMAIL = "";
+        public const string ADMIN_EMAIL_PASSWORD = "";
 
         public const string ACTIVITY_SLOT_HIDE = "Hide";
         public const string ACTIVITY_SLOT_SHOW = "Show";
@@ -17,5 +17,7 @@ namespace Rehab
         public static string AdminPassword = "aaa";
 
         public static string AuthorizeError = "Podano zle haslo!";
+
+        public const string SEND_TEXT_ANIMATION_TRIGGER = "IsSended";
     }
 }

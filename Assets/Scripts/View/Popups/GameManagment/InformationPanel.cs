@@ -26,7 +26,13 @@ namespace Rehab.Popups.GameManagment
 
         private void SetUpButton()
         {
-            // TO DO
+            startGame.onClick.AddListener(StartGameScene);
+        }
+
+        private void StartGameScene()
+        {
+            Selected.TEST = new Model.Test() { miniGames = new MiniGameContent[1] { content } };
+            ScenesService.LoadScene(Scenes.Scene_5_Test);
         }
 
         private void SetUpImage()

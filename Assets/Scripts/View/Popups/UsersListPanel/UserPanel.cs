@@ -62,7 +62,7 @@ namespace Rehab.Popups.UsersList
         private void SetShadow()
         {
             if(this)
-                shadow.SetActive(user.Email == Selected.USER.Email);
+                shadow.SetActive(Selected.USER != null && user.Email == Selected.USER.Email);
         }
 
     }

@@ -1,5 +1,4 @@
-﻿using Rehab.Manager;
-using System;
+﻿using System;
 using TMPro;
 using UnityEngine.UI;
 
@@ -42,7 +41,7 @@ namespace Rehab.Popups
         private void OnSuccessSubstract()
         {
             refreshUsers();
-            Selected.USER = null;
+            UserService.Unselect();
             Hide();
         }
 

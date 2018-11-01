@@ -15,7 +15,7 @@ namespace Rehab.Popups
         {
             var users = DatabaseService.GetUsers();
 
-            for (int i = 0; i < users.Count; i++)
+            for (int i = 0; i < users.Count && i < panels.Length; i++)
             {
                 panels[i].SetUp(users[i]);
             }
