@@ -1,0 +1,55 @@
+Assets/Resources/build.txt
+Assets/Resources/build.txt.meta
+
+# =============== #
+# Unity generated #
+# =============== #
+Temp
+Obj
+obj
+UnityGenerated
+Library
+Assets/AssetStoreTools
+
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj
+*.svd
+*.class
+*.userprefs
+*.csproj
+*.pidb
+*.suo
+*.sln
+*.user
+*.unityproj
+*.booproj
+.vs
+
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# ====== #
+# CUSTOM #
+# ====== #
+/Assets/Resources/build.txt
+/Assets/Resources/build.txt.meta
+/Assets/Resources/build.txt
+/updateRepos.sh
+/Assets/Framework
+/Assets/Framework.meta
+/Assets/MTools.meta
+/Assets/MTools
+/Assets/Settings/Resources/Content
+/Assets/Settings/Resources/Content.meta
+/Assets/Settings/Resources/BuildData/Build Data.asset
+/Assets/Settings/Resources/BuildData/Build Data.asset.meta
+/Assets/Settings/Resources/Content.meta

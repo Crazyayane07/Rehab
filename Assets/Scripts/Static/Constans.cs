@@ -14,7 +14,7 @@ namespace Rehab
 
         public const string ANIMATION_PLAN_END = "Koniec :)";
 
-        public static string AdminPassword = "aaa";
+        public static string AdminPassword = "rehab";
 
         public static string AuthorizeError = "Podano zle haslo!";
 

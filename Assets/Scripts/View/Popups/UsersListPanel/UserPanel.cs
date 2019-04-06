@@ -35,11 +35,13 @@ namespace Rehab.Popups.UsersList
         private void OnDisable()
         {
             UserService.OnSelect -= SetShadow;
+            shadow.SetActive(false);
         }
 
         private void OnDestroy()
         {
             UserService.OnSelect -= SetShadow;
+            shadow.SetActive(false);
         }
 
         private void SetUpButton()
@@ -61,9 +63,9 @@ namespace Rehab.Popups.UsersList
 
         private void SetShadow()
         {
-            if(this)
+            if(this != null)
                 shadow.SetActive(Selected.USER != null && user.Email == Selected.USER.Email);
         }
-
+       
     }
 }

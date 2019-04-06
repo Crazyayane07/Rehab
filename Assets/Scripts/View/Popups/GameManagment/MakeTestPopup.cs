@@ -38,6 +38,10 @@ namespace Rehab.Popups.GameManagment
         private void StartTest()
         {
             SetUpTest();
+
+            if (Selected.TEST.miniGames.Length < 1)
+                return;
+
             ScenesService.LoadScene(Scenes.Scene_5_Test);
         }
 

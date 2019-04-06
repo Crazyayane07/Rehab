@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c686b091e8de8fc4d89a05b212a70e1a, type: 3}
   m_Name: Activity6
   m_EditorClassIdentifier: 
-  activityName: Wood
-  icon: {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
+  activityName: Botanika
+  icon: {fileID: 21300000, guid: 6d6a2b20b13a9c34ab8db1d279451f8f, type: 3}

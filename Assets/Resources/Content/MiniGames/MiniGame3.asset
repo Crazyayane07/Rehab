@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cbff6f252ad4747bf17aca5d642451, type: 3}
   m_Name: MiniGame3
   m_EditorClassIdentifier: 
-  gameName: "Ksztla\u0142ty"
-  gameDescription: "Dopasuj kszta\u0142t do wzor\xF3w"
+  gameName: "Bry\u0142y"
+  gameDescription: "Dopasuj wzory do bry\u0142"
   difficulty: 2
-  gameImage: {fileID: 21300000, guid: 0264c19926b992c49974f0fb377107b3, type: 3}
+  gameImage: {fileID: 21300000, guid: 5fe05a2877d1a8f47b71bcdd7531cc0a, type: 3}
   helpers:
-  - {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
-  - {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
-  - {fileID: 21300000, guid: 46c993598ebc54c0c9ebd8a0050516fb, type: 3}
+  - {fileID: 21300000, guid: fa74940527ef48447acffd67dfd79181, type: 3}
+  - {fileID: 21300000, guid: 2ddb79a0396ba9e46bc417ab2b38876d, type: 3}
+  - {fileID: 21300000, guid: 2d7949e63af8904498691d4fc34d408c, type: 3}
   answers:
-  - {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
-  - {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
-  - {fileID: 21300000, guid: 46c993598ebc54c0c9ebd8a0050516fb, type: 3}
+  - {fileID: 21300000, guid: 854f6aa99b48bcd4ebeac02e386027ae, type: 3}
+  - {fileID: 21300000, guid: 362bb4e79d3d29742a5a1fedd3e4b35c, type: 3}
+  - {fileID: 21300000, guid: 983618bb3e08c9c4b8d356c0343108bc, type: 3}
   fakers:
-  - {fileID: 21300000, guid: 25b6b275757df4f589d23b542f236cb0, type: 3}
-  - {fileID: 21300000, guid: aebcbaf5d1d2146bf9ff69b1b95334d6, type: 3}
-  - {fileID: 21300000, guid: 51cbf6e0aefa3464ba1c716d3be413aa, type: 3}
+  - {fileID: 21300000, guid: c7f016376f0d14841beae421c6f002c2, type: 3}
+  - {fileID: 21300000, guid: bffcb0452b35a574e821834d817b9e78, type: 3}
+  - {fileID: 21300000, guid: 06345a4dbe1415c47bdfa087f1763c36, type: 3}

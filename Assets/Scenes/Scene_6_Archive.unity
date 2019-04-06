@@ -207,6 +207,91 @@ Prefab:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 224489144662885626, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 224649291839195842, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224832093541107110, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 224562426034137470, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 224161036441484076, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324910374875358, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_text
+      value: Data
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324910374875358, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743180643741340, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_text
+      value: Nazwa gry
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743180643741340, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743180643741340, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743180643741340, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114743180643741340, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257953837622838, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_text
+      value: Wynik czasowy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257953837622838, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257953837622838, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257953837622838, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114257953837622838, guid: 013783096674721468b57eca4c73fc08,
+        type: 2}
+      propertyPath: m_fontSize
+      value: 62.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 013783096674721468b57eca4c73fc08, type: 2}
   m_IsPrefabAsset: 0

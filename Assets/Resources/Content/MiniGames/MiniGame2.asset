@@ -11,20 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cbff6f252ad4747bf17aca5d642451, type: 3}
   m_Name: MiniGame2
   m_EditorClassIdentifier: 
-  gameName: Liczby
-  gameDescription: "Dopasuj odpowiednie numery w zale\u017Cno\u015Bci od liczby rzeczy
-    na ka\u017Cdym z obrazk\xF3w."
+  gameName: Cienie
+  gameDescription: "Dopasuj cienie zwierzak\xF3w"
   difficulty: 4
-  gameImage: {fileID: 21300000, guid: b176cae32f2208f4497de6eed55b6484, type: 3}
+  gameImage: {fileID: 21300000, guid: a37beb5da2fabe4488c433d4af5370f9, type: 3}
   helpers:
-  - {fileID: 21300000, guid: 51cbf6e0aefa3464ba1c716d3be413aa, type: 3}
-  - {fileID: 21300000, guid: 46c993598ebc54c0c9ebd8a0050516fb, type: 3}
-  - {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
+  - {fileID: 21300000, guid: 9e0e349e52757974d88c06a3932849bc, type: 3}
+  - {fileID: 21300000, guid: c609abf98bd984c43a66a37d92f5b746, type: 3}
+  - {fileID: 21300000, guid: 1b9af2725f38ac04990b9338143560bc, type: 3}
   answers:
-  - {fileID: 21300000, guid: 51cbf6e0aefa3464ba1c716d3be413aa, type: 3}
-  - {fileID: 21300000, guid: 46c993598ebc54c0c9ebd8a0050516fb, type: 3}
-  - {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
+  - {fileID: 21300000, guid: f7912117b0a857144964c20123437de2, type: 3}
+  - {fileID: 21300000, guid: ac6a5430b6df0d940a2c1dc10e63a8ad, type: 3}
+  - {fileID: 21300000, guid: ff42a6cc302a41d48b2eaab7c0982498, type: 3}
   fakers:
-  - {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
-  - {fileID: 21300000, guid: aebcbaf5d1d2146bf9ff69b1b95334d6, type: 3}
-  - {fileID: 21300000, guid: 25b6b275757df4f589d23b542f236cb0, type: 3}
+  - {fileID: 21300000, guid: 11f7090b15a54094ca9d4e69c3040c95, type: 3}
+  - {fileID: 21300000, guid: 6c2072e141e13c54ea10c9ad0a1138d2, type: 3}
+  - {fileID: 21300000, guid: d0e6afa0eae3e2641b6c7c51de4054e6, type: 3}

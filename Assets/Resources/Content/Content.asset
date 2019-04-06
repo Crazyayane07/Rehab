@@ -17,7 +17,13 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 083567944bf8e8a4ab2ff8b65b26f89b, type: 2}
   - {fileID: 11400000, guid: b9b86cd5868e71a4da50998fc5e6e8ce, type: 2}
   - {fileID: 11400000, guid: c218dd73767526a49b81dacbc485b620, type: 2}
-  - {fileID: 11400000, guid: 9b645b41999dd4f4583aefe0638b95af, type: 2}
+  - {fileID: 11400000, guid: d2091aaa330314f4884df7b237f2163c, type: 2}
+  - {fileID: 11400000, guid: 1f59a25035c6932439dfc3f9264fa47f, type: 2}
+  - {fileID: 11400000, guid: 77b43840c6742de4a90dce34e46c3ea1, type: 2}
+  - {fileID: 11400000, guid: 410cf0ba016289348b2fd87d28bf65d1, type: 2}
+  - {fileID: 11400000, guid: 2095f2417aeed024bac78235aed91023, type: 2}
+  - {fileID: 11400000, guid: 2c866412cf9160044be071419b8c1679, type: 2}
+  - {fileID: 11400000, guid: 350cc5fb87e72224eb65e4e9583c1429, type: 2}
   miniGames:
   - {fileID: 11400000, guid: 793820543d6ed2948aa73c36e583b431, type: 2}
   - {fileID: 11400000, guid: c655b99b860151c41878b8c30f7be56d, type: 2}

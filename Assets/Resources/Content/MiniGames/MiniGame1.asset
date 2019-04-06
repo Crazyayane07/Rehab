@@ -11,19 +11,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5cbff6f252ad4747bf17aca5d642451, type: 3}
   m_Name: MiniGame1
   m_EditorClassIdentifier: 
-  gameName: Cienie
-  gameDescription: "Nale\u017Cy dopasowa\u0107 obrazki do podanych cieni."
+  gameName: Matematyka
+  gameDescription: "Dopasuj numer do liczby przedmiot\xF3w"
   difficulty: 3
-  gameImage: {fileID: 21300000, guid: 911c075e8cbcd5442b131bfecaf26c20, type: 3}
+  gameImage: {fileID: 21300000, guid: d505b72f6923e3f428c9c51fa30e5208, type: 3}
   helpers:
-  - {fileID: 21300000, guid: aebcbaf5d1d2146bf9ff69b1b95334d6, type: 3}
-  - {fileID: 21300000, guid: 25b6b275757df4f589d23b542f236cb0, type: 3}
-  - {fileID: 21300000, guid: 51cbf6e0aefa3464ba1c716d3be413aa, type: 3}
+  - {fileID: 21300000, guid: 9f502673d66f1ba469a086056511d1f4, type: 3}
+  - {fileID: 21300000, guid: ea0a214984fd63740941245ea6353348, type: 3}
+  - {fileID: 21300000, guid: 402b62cf38891064ba8a382f10ce233e, type: 3}
   answers:
-  - {fileID: 21300000, guid: aebcbaf5d1d2146bf9ff69b1b95334d6, type: 3}
-  - {fileID: 21300000, guid: 25b6b275757df4f589d23b542f236cb0, type: 3}
-  - {fileID: 21300000, guid: 51cbf6e0aefa3464ba1c716d3be413aa, type: 3}
+  - {fileID: 21300000, guid: f99d172e1704c3b46b1fe016fac35182, type: 3}
+  - {fileID: 21300000, guid: 50a9c7fc879a5b5429cc51f0b832b55f, type: 3}
+  - {fileID: 21300000, guid: 3df272b79daef0c4e9cd17a5f05e1094, type: 3}
   fakers:
-  - {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
-  - {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
-  - {fileID: 21300000, guid: 46c993598ebc54c0c9ebd8a0050516fb, type: 3}
+  - {fileID: 21300000, guid: 08a825bcfcfc33448be2c8ea99c8dc4a, type: 3}
+  - {fileID: 21300000, guid: 213799bf9bd705d47aeb002055311ed5, type: 3}
+  - {fileID: 21300000, guid: 0ba044b1b8be44b4cb4ec6615b22ff42, type: 3}

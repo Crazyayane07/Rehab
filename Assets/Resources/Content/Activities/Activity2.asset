@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c686b091e8de8fc4d89a05b212a70e1a, type: 3}
   m_Name: Activity2
   m_EditorClassIdentifier: 
-  activityName: Meat
-  icon: {fileID: 21300000, guid: 25b6b275757df4f589d23b542f236cb0, type: 3}
+  activityName: Podwieczorek
+  icon: {fileID: 21300000, guid: 426a6f844c1efb444b8598abdd1da621, type: 3}

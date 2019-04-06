@@ -35,11 +35,15 @@ namespace Rehab.Popups
 
         private void SubUser()
         {
+            if (Selected.USER == null)
+                return;
+
             DatabaseService.SubUser(Selected.USER.Email, OnSuccessSubstract);
         }
 
         private void OnSuccessSubstract()
         {
+            DatabaseService.DeleteTestResults(Selected.USER.Email);
             refreshUsers();
             UserService.Unselect();
             Hide();

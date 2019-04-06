@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c686b091e8de8fc4d89a05b212a70e1a, type: 3}
   m_Name: Activity1
   m_EditorClassIdentifier: 
-  activityName: Coin
-  icon: {fileID: 21300000, guid: aebcbaf5d1d2146bf9ff69b1b95334d6, type: 3}
+  activityName: Jazda konna
+  icon: {fileID: 21300000, guid: ef2126eb21467ae4f9c52b49b31348a3, type: 3}

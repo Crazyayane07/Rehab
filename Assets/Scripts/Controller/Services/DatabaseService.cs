@@ -11,6 +11,7 @@ namespace Rehab.Services
         List<User> GetUsers();
         void AddUser(User user, Action onSuccess);
         void SubUser(string email, Action onSuccess);
+        void DeleteTestResults(string email);
 
         void AddResult(string email, string date, string gameName, string timeResult);
         List<Result> GetUserResult(string email);
@@ -116,7 +117,6 @@ namespace Rehab.Services
                 {
                     string sqlQuery2 = "";
 
-                    //sqlQuery2 = "CREATE TABLE IF NOT EXISTS Results(id INTEGER PRIMARY KEY,UserEmail TEXT NOT NULL,Date TEXT NULL,GameName TEXT NOT NULL, TimeResult TEXT NULL)";
                     sqlQuery2 += "INSERT INTO Results(UserEmail, Date, GameName, TimeResult) VALUES(\"" + email + "\",\"" + date + "\",\"" + gameName + "\",\"" + timeResult + "\");";
 
                     dbCmd.CommandText = sqlQuery2;
@@ -153,6 +153,24 @@ namespace Rehab.Services
                 }
             }
             return results;
+        }
+
+        public void DeleteTestResults(string email)
+        {
+            using (IDbConnection dbConnection = new SqliteConnection(SQL.CONNESTION_STRING))
+            {
+                dbConnection.Open();
+                using (IDbCommand dbCmd = dbConnection.CreateCommand())
+                {
+                    string sqlQuery2 = "";
+                   
+                    sqlQuery2 += "DELETE FROM Results WHERE UserEmail = " + "'" + email + "'";
+
+                    dbCmd.CommandText = sqlQuery2;
+                    dbCmd.ExecuteScalar();
+                }
+                dbConnection.Close();
+            }
         }
     }
 }

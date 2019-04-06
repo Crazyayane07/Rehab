@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c686b091e8de8fc4d89a05b212a70e1a, type: 3}
   m_Name: Activity5
   m_EditorClassIdentifier: 
-  activityName: Hammer
-  icon: {fileID: 21300000, guid: b6adf1cf14f6d464194562461987edf1, type: 3}
+  activityName: Gotowanie
+  icon: {fileID: 21300000, guid: ad0e5dbbcac3bfb448c7d645da6fb3e8, type: 3}
